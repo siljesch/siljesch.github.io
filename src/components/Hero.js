@@ -1,6 +1,6 @@
 import React from "react";
 import { ScrollBtn } from "./styles/FormStyles";
-import { Container, HeroContainer } from "./styles/LayoutStyles";
+import { Container, Page } from "./styles/LayoutStyles";
 import {
   BlueSmallText,
   Heading,
@@ -10,7 +10,7 @@ import {
 
 function Hero() {
   return (
-    <HeroContainer>
+    <Page>
       <Container>
         <BlueSmallText>Hello there, my name is</BlueSmallText>
         <Heading>Silje Schoell</Heading>
@@ -22,7 +22,7 @@ function Hero() {
         </SmallText>
         <ScrollBtn to="contact">Contact me</ScrollBtn>
       </Container>
-    </HeroContainer>
+    </Page>
   );
 }
 

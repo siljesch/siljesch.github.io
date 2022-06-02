@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Heading = styled.h1`
   color: #00ffd4;
   font-size: 4rem;
-  margin-bottom: 0rem;
+  margin: 0.5rem 0 0 0;
 `;
 
 export const NextHeading = styled.h2`
