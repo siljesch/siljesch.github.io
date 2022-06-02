@@ -8,7 +8,7 @@ import { GlobalStyle } from "./components/styles/LayoutStyles";
 
 function App() {
   return (
-    <div className="app">
+    <div>
       <GlobalStyle />
       <Router>
         <Sidebarmenu />

@@ -1,7 +1,11 @@
 @import url("https://use.typekit.net/npy7xqs.css");
 
 html {
-  height: 100%;
   font-family: "roboto", sans-serif;
   font-weight: 400;
+  margin: 0;
+}
+
+.active {
+  border-bottom: solid 2px #00cbff;
 }

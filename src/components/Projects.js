@@ -3,7 +3,7 @@ import { Card, CardContainer, Page } from "./styles/LayoutStyles";
 
 function Projects() {
   return (
-    <Page>
+    <Page name="projects">
       <CardContainer>
         <Card />
         <Card />

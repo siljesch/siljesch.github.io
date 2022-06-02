@@ -15,17 +15,23 @@ export const Container = styled.div`
 export const CardContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100vh;
 `;
 
 export const Card = styled.div`
   border: solid 2px #00cbff;
-  height: 400px;
+  height: 50%;
   width: 30%;
 `;
 
 export const GlobalStyle = createGlobalStyle`
+body {
+    margin: 0;
+}
 #root {
     background: linear-gradient(#183128, #006958);  
-height: 100%;
+    height: 100%;
+    margin: 0;
 }  
 `;

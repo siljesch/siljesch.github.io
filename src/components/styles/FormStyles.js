@@ -1,11 +1,13 @@
+import Link from "react-scroll/modules/components/Link";
 import styled from "styled-components";
 
-export const ScrollBtn = styled.button`
+export const ScrollBtn = styled(Link)`
   border: solid 2px #00cbff;
   background: transparent;
   color: #00cbff;
   font-size: 1rem;
   padding: 0.5rem 2rem 0.5rem 2rem;
+  cursor: pointer;
 `;
 
 export const Form = styled.form`

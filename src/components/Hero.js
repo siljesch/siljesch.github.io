@@ -10,7 +10,7 @@ import {
 
 function Hero() {
   return (
-    <Page>
+    <Page name="about">
       <Container>
         <BlueSmallText>Hello there, my name is</BlueSmallText>
         <Heading>Silje Schoell</Heading>
@@ -20,7 +20,9 @@ function Hero() {
           for work. My skillset includes JavaScript, html, sass, TypeScript,
           React, Next. Have a look at my repos, and get in touch.
         </SmallText>
-        <ScrollBtn to="contact">Contact me</ScrollBtn>
+        <ScrollBtn to="contact" spy={true} smooth={true} duration={500}>
+          Contact me
+        </ScrollBtn>
       </Container>
     </Page>
   );

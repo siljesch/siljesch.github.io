@@ -11,7 +11,7 @@ import { NextHeading } from "./styles/TextStyles";
 
 function Contact() {
   return (
-    <Page>
+    <Page name="contact">
       <Container>
         <NextHeading>Get in touch</NextHeading>
         <Form>
