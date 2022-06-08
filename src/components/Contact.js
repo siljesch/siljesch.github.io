@@ -9,8 +9,6 @@ import {
 import { Container, Page } from "./styles/LayoutStyles";
 import {
   BlueLinkSmallText,
-  BlueSmallText,
-  LinkText,
   NextHeading,
   SmallText,
   ThirdHeading,
