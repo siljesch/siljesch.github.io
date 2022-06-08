@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Sidebarmenu from "./components/nav/Sidebarmenu";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
