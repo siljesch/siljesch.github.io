@@ -1,9 +1,20 @@
-import React from "react";
-import { ListItem, NavLink, NavList, SidebarNav } from "./NavStyles";
+import React, { useState } from "react";
+import { ListItem, MobileNav, NavLink, NavList, SidebarNav } from "./NavStyles";
+import { FiMenu } from "react-icons/fi";
+import Mobilemenu from "./Mobilemenu";
 
 function Sidebarmenu() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <SidebarNav>
+      <MobileNav onClick={handleShow} className="me-2">
+        <FiMenu />
+      </MobileNav>
+      <Mobilemenu show={show} handleClose={handleClose} />
       <NavList>
         <ListItem>
           <NavLink

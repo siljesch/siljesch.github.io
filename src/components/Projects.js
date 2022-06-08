@@ -7,6 +7,7 @@ import {
   CardText,
   Image,
   Page,
+  ProjectPage,
 } from "./styles/LayoutStyles";
 import {
   BlueSmallText,
@@ -43,7 +44,7 @@ function Projects() {
   }
 
   return (
-    <Page name="projects">
+    <ProjectPage name="projects">
       <CardContainer>
         {projects.map((item, idx) => {
           return (
@@ -74,7 +75,7 @@ function Projects() {
           );
         })}
       </CardContainer>
-    </Page>
+    </ProjectPage>
   );
 }
 

@@ -8,8 +8,17 @@ export const Page = styled.div`
   align-items: center;
 `;
 
+export const ProjectPage = styled(Page)`
+  @media (max-width: 768px) {
+    height: fit-content;
+  }
+`;
+
 export const Container = styled.div`
   width: 60%;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const CardContainer = styled(Container)`
@@ -17,6 +26,10 @@ export const CardContainer = styled(Container)`
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: fit-content;
+  }
 `;
 
 export const Card = styled.div`
@@ -24,6 +37,11 @@ export const Card = styled.div`
   height: 55%;
   width: 30%;
   background: rgba(0, 0, 0, 0.2);
+  @media (max-width: 768px) {
+    height: 35%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 `;
 
 export const CardText = styled.div`

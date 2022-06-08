@@ -9,6 +9,10 @@ export const TopMenu = styled.div`
   z-index: 1;
   top: 0;
   right: 0;
+  @media (max-width: 768px) {
+    width: 100px;
+    margin: 0;
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -17,16 +21,38 @@ export const IconContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const IconLink = styled.a`
   color: #00cbff;
   font-size: 1.8rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
+`;
+
+export const MobileNav = styled.button`
+  display: none;
+  @media (max-width: 768px) {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00cbff;
+    font-size: 1.5rem;
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const SidebarNav = styled.nav`
   min-height: 100vh;
-  width: 200px;
+  width: 100px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -35,6 +61,10 @@ export const SidebarNav = styled.nav`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    min-height: 100px;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -42,11 +72,24 @@ export const NavList = styled.ul`
   border-right: solid 2px #00cbff;
   height: calc(100vh - 300px);
   padding-top: 2rem;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MobileNavList = styled(NavList)`
+  height: 100%;
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const ListItem = styled.li`
   padding: 2rem;
   list-style-type: none;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 export const NavLink = styled(Link)`
