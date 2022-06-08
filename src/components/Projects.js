@@ -55,10 +55,18 @@ function Projects() {
               <CardText>
                 <ThirdHeading>{item.attributes.title}</ThirdHeading>
                 <SmallerText>{item.attributes.description}</SmallerText>
-                <LinkText to={item.attributes.githuburl} target="_blank">
+                <LinkText
+                  href={item.attributes.githuburl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Github Repo
                 </LinkText>
-                <LinkText to={item.attributes.websiteurl} target="_blank">
+                <LinkText
+                  href={item.attributes.websiteurl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Website
                 </LinkText>
               </CardText>

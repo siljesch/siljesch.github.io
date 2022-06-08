@@ -39,7 +39,7 @@ export const SmallerText = styled(SmallText)`
   font-size: 1rem;
 `;
 
-export const LinkText = styled(Link)`
+export const LinkText = styled.a`
   color: #00cbff;
   font-size: 1rem;
   text-decoration: underline;
