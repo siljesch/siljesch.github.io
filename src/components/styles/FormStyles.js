@@ -18,12 +18,12 @@ export const Form = styled.form`
 
 export const FormLabel = styled.label`
   color: #00c9bc;
+  margin-top: 1rem;
 `;
 
 export const FormInput = styled.input`
   border: solid 2px #00cbff;
   height: 1.5rem;
-  margin-bottom: 1rem;
   background: rgba(1000, 1000, 1000, 0.2);
 `;
 
@@ -40,4 +40,5 @@ export const SubmitBtn = styled.button`
   font-size: 1rem;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   width: 10rem;
+  cursor: pointer;
 `;

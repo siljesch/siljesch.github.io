@@ -9,6 +9,7 @@ import {
   Page,
 } from "./styles/LayoutStyles";
 import {
+  BlueSmallText,
   LinkText,
   SmallerText,
   SmallText,
@@ -28,8 +29,17 @@ function Projects() {
     fetchData().catch((error) => setError(error));
   }, []);
 
+  if (error) {
+    return (
+      <Page name="projects">
+        <ThirdHeading>I'm sorry, something went wrong</ThirdHeading>
+        <SmallText>{error.message}</SmallText>
+      </Page>
+    );
+  }
+
   if (!projects) {
-    return <div>Loading...</div>;
+    return <BlueSmallText>Loading...</BlueSmallText>;
   }
 
   return (

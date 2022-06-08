@@ -30,6 +30,11 @@ export const BlueSmallText = styled(SmallText)`
   color: #00cbff;
 `;
 
+export const BlueLinkSmallText = styled(SmallText)`
+  color: #00cbff;
+  cursor: pointer;
+`;
+
 export const SmallerText = styled(SmallText)`
   font-size: 1rem;
 `;
