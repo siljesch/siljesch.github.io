@@ -1,6 +1,29 @@
 import Link from "react-scroll/modules/components/Link";
 import styled from "styled-components";
 
+export const TopMenu = styled.div`
+  width: 200px;
+  height: 100px;
+  margin: 2rem 2rem 0 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+`;
+
+export const IconContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const IconLink = styled.a`
+  color: #00cbff;
+  font-size: 1.8rem;
+`;
+
 export const SidebarNav = styled.nav`
   min-height: 100vh;
   width: 200px;

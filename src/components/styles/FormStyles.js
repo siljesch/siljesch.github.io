@@ -8,6 +8,7 @@ export const ScrollBtn = styled(Link)`
   font-size: 1rem;
   padding: 0.5rem 2rem 0.5rem 2rem;
   cursor: pointer;
+  margin-top: 1rem;
 `;
 
 export const Form = styled.form`
