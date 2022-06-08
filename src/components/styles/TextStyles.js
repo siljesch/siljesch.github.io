@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Heading = styled.h1`
@@ -12,6 +13,14 @@ export const NextHeading = styled.h2`
   margin-top: 0.5rem;
 `;
 
+export const ThirdHeading = styled.h3`
+  color: #00c9bc;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+`;
+
 export const SmallText = styled.p`
   color: #00c9bc;
   font-size: 1.2rem;
@@ -19,4 +28,15 @@ export const SmallText = styled.p`
 
 export const BlueSmallText = styled(SmallText)`
   color: #00cbff;
+`;
+
+export const SmallerText = styled(SmallText)`
+  font-size: 1rem;
+`;
+
+export const LinkText = styled(Link)`
+  color: #00cbff;
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
 `;

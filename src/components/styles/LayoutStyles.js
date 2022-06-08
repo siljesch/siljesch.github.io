@@ -21,8 +21,20 @@ export const CardContainer = styled(Container)`
 
 export const Card = styled.div`
   border: solid 2px #00cbff;
-  height: 50%;
+  height: 55%;
   width: 30%;
+  background: rgba(0, 0, 0, 0.2);
+`;
+
+export const CardText = styled.div`
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Image = styled.img`
+  width: 100%;
 `;
 
 export const GlobalStyle = createGlobalStyle`
