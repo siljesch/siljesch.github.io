@@ -66,4 +66,10 @@ body {
     height: 100%;
     margin: 0;
 }  
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #00cbff;
+}
 `;

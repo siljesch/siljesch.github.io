@@ -23,6 +23,7 @@ export const IconContainer = styled.div`
   align-items: center;
   @media (max-width: 768px) {
     justify-content: center;
+    flex-direction: column;
   }
 `;
 
@@ -33,6 +34,15 @@ export const IconLink = styled.a`
     font-size: 1.5rem;
     padding-left: 0.5rem;
   }
+`;
+
+export const FixedMenu = styled.div`
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: 100%;
 `;
 
 export const MobileNav = styled.button`
@@ -47,6 +57,7 @@ export const MobileNav = styled.button`
     font-size: 1.5rem;
     width: 100px;
     height: 100px;
+    cursor: pointer;
   }
 `;
 
@@ -62,8 +73,7 @@ export const SidebarNav = styled.nav`
   justify-content: center;
   align-items: center;
   @media (max-width: 768px) {
-    flex-direction: row;
-    min-height: 100px;
+    display: none;
   }
 `;
 
@@ -81,6 +91,8 @@ export const MobileNavList = styled(NavList)`
   height: 100%;
   @media (max-width: 768px) {
     display: block;
+    border: none;
+    padding: 0;
   }
 `;
 
