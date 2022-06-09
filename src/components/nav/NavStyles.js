@@ -6,7 +6,7 @@ export const TopMenu = styled.div`
   height: 100px;
   margin: 2rem 2rem 0 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   right: 0;
   @media (max-width: 768px) {
@@ -16,6 +16,7 @@ export const TopMenu = styled.div`
 `;
 
 export const IconContainer = styled.div`
+  z-index: 1000;
   width: 100%;
   height: 100%;
   display: flex;
@@ -30,6 +31,7 @@ export const IconContainer = styled.div`
 export const IconLink = styled.a`
   color: #00cbff;
   font-size: 1.8rem;
+  z-index: 1000;
   @media (max-width: 768px) {
     font-size: 1.5rem;
     padding-left: 0.5rem;
@@ -42,7 +44,7 @@ export const FixedMenu = styled.div`
   top: 0;
   left: 0;
   height: fit-content;
-  width: 100%;
+  width: 100px;
 `;
 
 export const MobileNav = styled.button`
