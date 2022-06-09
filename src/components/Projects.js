@@ -40,7 +40,13 @@ function Projects() {
   }
 
   if (!projects) {
-    return <BlueSmallText>Loading...</BlueSmallText>;
+    return (
+      <Page name="projects">
+        <CardContainer>
+          <BlueSmallText>Loading...</BlueSmallText>
+        </CardContainer>
+      </Page>
+    );
   }
 
   return (
