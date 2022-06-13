@@ -43,7 +43,9 @@ function Projects() {
     return (
       <Page name="projects">
         <CardContainer>
-          <BlueSmallText>Loading...</BlueSmallText>
+          <BlueSmallText>
+            Loading<span className="loading"></span>
+          </BlueSmallText>
         </CardContainer>
       </Page>
     );
